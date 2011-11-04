@@ -1,0 +1,12 @@
+#N canvas -1668 338 450 300 10;
+#X obj 138 73 list split 1;
+#X obj 165 128 print main;
+#X obj 196 98 list;
+#X obj 138 97 t b a;
+#X msg 138 38 1 2 3 4;
+#X connect 0 0 3 0;
+#X connect 0 1 2 1;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;
+#X connect 3 1 1 0;
+#X connect 4 0 0 0;
