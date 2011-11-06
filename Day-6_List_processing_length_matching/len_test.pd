@@ -1,0 +1,16 @@
+#N canvas -1218 430 450 300 10;
+#X obj 157 179 lmatch 1 1;
+#X floatatom 203 134 5 0 0 0 - - -;
+#X floatatom 259 134 5 0 0 0 - - -;
+#X obj 258 215 print excess;
+#X obj 180 233 print sub;
+#X obj 77 225 print main;
+#X msg 176 89 a b c d e;
+#X msg 86 89 1 2 3 4 5 6;
+#X connect 0 0 5 0;
+#X connect 0 1 4 0;
+#X connect 0 2 3 0;
+#X connect 1 0 0 2;
+#X connect 2 0 0 3;
+#X connect 6 0 0 1;
+#X connect 7 0 0 0;
