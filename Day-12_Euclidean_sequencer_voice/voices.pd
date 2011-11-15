@@ -1,1 +1,14 @@
 #N canvas -765 488 450 300 10;
+#X obj 90 115 euclid_sequencer;
+#X floatatom 50 48 5 0 0 0 - - -;
+#X floatatom 96 49 5 0 0 0 - - -;
+#X obj 178 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 85 159 5 0 0 0 - - -;
+#X obj 213 54 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 0 2;
+#X connect 5 0 0 3;

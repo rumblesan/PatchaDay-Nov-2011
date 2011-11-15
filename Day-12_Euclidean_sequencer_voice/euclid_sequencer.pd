@@ -1,4 +1,4 @@
-#N canvas -1301 327 772 574 10;
+#N canvas -1736 200 772 574 10;
 #X obj 82 183 list split 1;
 #X obj 140 208 list;
 #X obj 238 210 + 1;
@@ -19,7 +19,7 @@
 #X obj 105 334 table \$0-sequence;
 #X obj 204 50 inlet;
 #X obj 249 51 inlet;
-#X obj 486 343 outlet;
+#X obj 486 365 outlet;
 #X obj 486 314 tabread \$0-sequence;
 #X obj 109 285 tabwrite \$0-sequence;
 #X obj 364 224 v \$0-seqlength;
@@ -28,6 +28,7 @@
 #X obj 553 132 inlet;
 #X obj 486 161 t b;
 #X obj 553 159 t f;
+#X obj 486 339 sel 1;
 #X connect 0 0 6 0;
 #X connect 0 1 1 1;
 #X connect 1 0 0 0;
@@ -56,9 +57,10 @@
 #X connect 16 0 7 0;
 #X connect 18 0 16 0;
 #X connect 19 0 16 1;
-#X connect 21 0 20 0;
+#X connect 21 0 29 0;
 #X connect 24 0 11 1;
 #X connect 25 0 27 0;
 #X connect 26 0 28 0;
 #X connect 27 0 10 0;
 #X connect 28 0 10 1;
+#X connect 29 0 20 0;
