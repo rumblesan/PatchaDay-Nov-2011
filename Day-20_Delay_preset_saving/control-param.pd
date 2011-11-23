@@ -1,0 +1,17 @@
+#N canvas 63 113 450 300 10;
+#X obj 55 33 inlet;
+#X obj 74 64 outlet;
+#X obj 55 145 s \$1-\$2-set;
+#X obj 166 71 r \$1-\$2-get;
+#X obj 155 140 outlet;
+#X obj 155 48 inlet;
+#X obj 166 95 list prepend \$2;
+#X obj 55 90 route \$2;
+#X msg 55 116 set \$1;
+#X connect 0 0 1 0;
+#X connect 0 0 7 0;
+#X connect 3 0 6 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 0;
+#X connect 7 0 8 0;
+#X connect 8 0 2 0;
