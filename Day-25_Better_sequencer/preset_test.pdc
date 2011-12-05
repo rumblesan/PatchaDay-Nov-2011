@@ -1,0 +1,17 @@
+data;
+template 1002-track;
+float a;
+float b;
+float c;
+float d;
+float e;
+float f;
+float g;
+float h;
+;
+;
+1002-track 1 0 0 0 0 0 0 0;
+1002-track 2 0 0 0 0 0 0 0;
+1002-track 3 0 0 0 0 0 0 0;
+1002-track 4 0 0 0 0 0 0 0;
+1002-track 5 0 0 0 0 0 0 0;
