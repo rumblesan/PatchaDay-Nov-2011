@@ -1,0 +1,26 @@
+#N struct 1018-track float a float b float c float d float e float
+f float g float h;
+#N canvas -1711 108 450 300 10;
+#X obj 117 53 launchpad_io 1;
+#X msg 307 119 clock;
+#X msg 369 119 reset;
+#X obj 307 95 metro 200;
+#X obj 342 43 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 342 67 t f b;
+#X obj 117 214 steps 64;
+#X obj 307 149 s clock-controls;
+#X obj 162 190 r clock-controls;
+#X obj 117 242 print;
+#X obj 149 107 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 6 0;
+#X connect 0 0 10 0;
+#X connect 1 0 7 0;
+#X connect 2 0 7 0;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;
+#X connect 5 1 2 0;
+#X connect 6 0 9 0;
+#X connect 8 0 6 1;
